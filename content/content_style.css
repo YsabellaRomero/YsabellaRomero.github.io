@@ -1,0 +1,212 @@
+.wrap { 
+    padding: 25px; 
+    height: 625px;
+    text-align: center; 
+    box-shadow: 0 4px 25px -4px #9da5ab; 
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-rows: [header] 100px [article] 520px [footer];
+} 
+
+article { 
+    padding: 25px 0;
+    margin-left: -1.37em;
+    line-height: 150%; 
+    text-align: left; 
+}
+
+body {
+    background-color: #D7E6FF;
+}
+
+.intro_text{
+    padding: 0 10px 0 15px;
+}
+
+footer{
+    width: 393px;
+}
+
+/* ------------------- BUTTONS FOR POEMS ------------------- */ 
+#show:not(.intro_text){
+    display: grid;
+    grid-template-columns: [left] 140px [middle] 140px [right] ;
+    grid-column-gap: 0px;
+} 
+
+.left {
+    grid-area: left;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right {
+    grid-area: right;
+}
+
+.left, .right, .middle{
+    justify-items: center;
+    align-content: center;
+}
+
+
+.button1, .button2{
+    background-color: #E5EFFF;
+    border: 1px solid #D7E6FF;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #3c4043;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    display: inline-block;
+    font-family: arial,sans-serif;
+    font-size: 11px;
+    height: 30px;
+    width: 135px;
+    text-align: center;
+}
+
+.button1 p {
+    line-height: 10px;
+}
+
+.button2 p {
+    line-height: 1px;
+    padding-bottom: -2em;
+}
+
+article .button:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+
+article .button:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+/* --------------------------------------------------------- */
+
+
+
+/* -------------------- BOX OF COMMENTS -------------------- */
+#comment-box, #post {
+    border: none;
+    border-radius: 5px;
+}
+#post:hover{
+    background-color: deeppink;
+}
+/* --------------------------------------------------------- */
+
+
+/* -------------------  PAGES ------------------- */
+.pages {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: -1.5em;
+    font-size: small;
+}
+
+.pages #underline {
+    text-decoration: none;
+    color: black;
+}
+
+.pages #underline:hover {
+    border-bottom: 1px solid black;
+}
+
+.pages #underline.active {
+    border-bottom: 1px solid black;
+}
+/* ---------------------------------------------- */
+
+
+/*------------------------ MOBILE DEVICES ----------------------------*/
+@media only screen and (min-width: 768px) {
+    article { 
+        padding: 40px; 
+        margin-left: 0px;
+    }
+
+    .wrap { 
+        height: 530px;
+        max-width: 750px; 
+        margin: 50px auto;
+        padding: 10px 40px;
+        grid-template-rows: [header] 90px [article] 427px [footer];
+    }
+
+    .intro_text{
+        padding: 0px;
+    }
+
+
+    footer{
+        width: auto;
+    }
+
+
+    .button1, .button2{
+        display: inline-block;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        height: 44px;
+        line-height: 27px;
+        width: 200px;
+    }
+
+    #show:not(.intro_text) {
+        display: grid;
+        grid-template-columns: [left] auto [middle] auto [right];
+        grid-column-gap: 20px;
+    } 
+
+    .left, .right, .middle{
+        padding-right: 0px;
+    }
+
+    .button1 p {
+        line-height: 17px;
+    }
+    
+    .button2 p {
+        line-height: 1px;
+        padding-bottom: -2em;
+    }
+
+    .intro_text{
+        margin-top: 30px;
+    }
+
+    .pages {
+        padding-top: 25px;
+        font-size:medium;
+    }
+
+}
+
+/* ----------------------------------------------------------------- */
+
+/* -------------------  MENU ------------------- */
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid black;
+}
+
+.menu a.active {
+    border-bottom: 1px solid black;
+}
+
+/* --------------------------------------------- */

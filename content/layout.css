@@ -1,0 +1,27 @@
+article #show {
+    display: grid;
+    grid-template-columns: [left] auto [middle] auto [right];
+    grid-column-gap: 10px;
+    text-align: center;
+  } 
+
+/* Style the left column */
+#show .left {
+  grid-area: left;
+  justify-items: center;
+  align-content: center;
+}
+
+/* Style the middle column */
+#show .middle {
+  grid-area: middle;
+  justify-items: center;
+  align-content: center;
+}
+
+/* Style the right column */
+#show .right {
+  grid-area: right;
+  justify-items: center;
+  align-content: center;
+}

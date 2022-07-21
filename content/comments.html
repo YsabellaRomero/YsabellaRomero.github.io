@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blogue</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <link href="content/content_style.css" rel="stylesheet" type="text/css"/> 
+  <script src="./data.js"></script>
+</head>
+<body>
+
+    <div class="wrap">
+        <header>
+            <h1 id="site_name" ></h1>
+            <div class="menu">
+                <a href="/content/intro.html" id="intro"></a>
+                <a> | </a>
+                <a href="/content/poems_pages/page1.html" id="poems"></a>
+                <a> | </a>
+                <a href="/content/comments.html" id="suggestions"></a>
+            </div>
+        </header>
+
+        <article>
+            <h3>Comments</h3>
+            <!-- We will show past comments in the list below-->
+            <ul id="pastcomments"></ul>
+            <!-- This is the form for entering a new comment -->
+            <form id="newcomment">
+                <label for="tbName">First Name or Initials</label>
+                <br>
+                <input id="tbName" type="text" maxlength="20" required>
+                <br>
+                <label for="txComment">Your Comment / Question</label>
+                <br>
+                <textarea id="txComment" maxlength="4096" required style="width:96%"></textarea>
+                <br>
+                <input type="submit" id="btnSubmitComment" value="Submit Comment">
+            </form>
+        </article>
+    
+        <footer>
+            <small id="foot">&copy; </small>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("site_name").innerHTML += data.site;
+        document.getElementById("foot").innerHTML += data.foot;
+        document.getElementById("intro").innerHTML += nav_menu[0];
+        document.getElementById("poems").innerHTML += nav_menu[1];
+        document.getElementById("suggestions").innerHTML += nav_menu[2];
+    </script>
+
+    <!-- Connection to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+</html>
