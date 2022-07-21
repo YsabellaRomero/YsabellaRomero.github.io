@@ -11,8 +11,6 @@
 
 article { 
     padding: 25px 0;
-    margin-left: -1.37em;
-    margin-right: -1.37em;
     line-height: 150%; 
     text-align: left; 
 }
@@ -32,7 +30,9 @@ body {
 /* ------------------- BUTTONS FOR POEMS ------------------- */ 
 #show:not(.intro_text){
     display: grid;
-    grid-template-columns: [left] 120px [middle] 120px [right] ;
+    grid-template-columns: [left] 112px [middle] 112px [right] ;
+    grid-column-gap: 0px;
+    margin-left: -1.2em;
 } 
 
 .left {
@@ -68,7 +68,7 @@ body {
     font-family: arial,sans-serif;
     font-size: xx-small;
     height: 30px;
-    width: 111px;
+    width: 100px;
     text-align: center;
 }
 
