@@ -12,6 +12,7 @@
 article { 
     padding: 25px 0;
     margin-left: -1.37em;
+    margin-right: -1.37em;
     line-height: 150%; 
     text-align: left; 
 }
@@ -26,12 +27,6 @@ body {
     padding: 0 20px;
 }
 
-footer{
-    width: 393px;
-}
-.intro_text p{
-    width: auto;
-}
 
 /* ------------------- BUTTONS FOR POEMS ------------------- */ 
 #show:not(.intro_text){
