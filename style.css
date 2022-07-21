@@ -1,0 +1,45 @@
+.wrap { 
+    padding: 25px; 
+    text-align: center; 
+    box-shadow: 0 4px 25px -4px #9da5ab; 
+    background-color: white;
+    color: black;
+}
+
+article { 
+    padding: 25px 0; 
+    line-height: 150%; 
+    text-align: left; 
+}
+
+body {
+    background-color: #D7E6FF;
+}
+
+@media only screen and (min-width: 768px) {
+    article { 
+        padding: 40px; 
+    }
+    .wrap { 
+        max-width: 750px; 
+        margin: 50px auto;
+        padding: 30px 40px;
+    }
+}
+
+/* -------------------  MENU ------------------- */
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid black;
+}
+
+.menu a.active {
+    border-bottom: 1px solid black;
+}
+
+/* --------------------------------------------- */
