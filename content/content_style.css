@@ -1,12 +1,12 @@
 .wrap { 
     padding: 25px; 
-    height: 700px;
+    height: 623px;
     text-align: center; 
     box-shadow: 0 4px 25px -4px #9da5ab; 
     background-color: white;
     color: black;
     display: grid;
-    grid-template-rows: [header] 100px [article] 600px [footer];
+    grid-template-rows: [header] 100px [article] auto [footer];
 } 
 
 article { 
