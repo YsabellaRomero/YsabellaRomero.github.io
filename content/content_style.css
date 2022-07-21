@@ -1,6 +1,6 @@
 .wrap { 
     padding: 25px; 
-    height: 500px;
+    height: 625px;
     text-align: center; 
     box-shadow: 0 4px 25px -4px #9da5ab; 
     background-color: white;
@@ -18,15 +18,19 @@ article {
 
 body {
     background-color: #D7E6FF;
-    height: 500px;
 }
 
 .intro_text{
     padding: 0 10px 0 15px;
+    margin: 0 2px 0 2px;
+    padding: 0 20px;
 }
 
 footer{
     width: 393px;
+}
+.intro_text p{
+    width: auto;
 }
 
 /* ------------------- BUTTONS FOR POEMS ------------------- */ 
@@ -211,3 +215,4 @@ article .button:focus {
 }
 
 /* --------------------------------------------- */
+
