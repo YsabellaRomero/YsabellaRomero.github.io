@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blogue</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <link href="content/content_style.css" rel="stylesheet" type="text/css"/> 
+  <script src="./data.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <h1 id="site_name"></h1>
+            <div class="menu">
+                <a href="/content/intro.html" id="intro"></a>
+                <a> | </a>
+                <a href="content/poems_pages/page1.html" id="poems"></a>
+            </div>
+        </header>
+
+        <article>
+            <div id="show">
+                <div class="left">
+                    <a id="poem16" class="button1" href="poems/poem16.html"><p>Divindade Gasta</p></a>
+                    <br>
+                    <br>
+                    <a id="poem19" class="button1" href="poems/poem19.html"><p>#Rascunho 3</p></a>
+                    <br>
+                    <br>
+                    <a id="poem22" class="button1" href="poems/poem22.html"><p>Uma História Robusta</p></a>
+                    <br>
+                    <br>
+                    <a id="poem25" class="button1" href="poems/poem25.html"><p>Uma Dor Suave</p></a>
+                    <br>
+                    <br>
+                    <a id="poem28" class="button1" href="poems/poem28.html"><p>A Beleza neste Mal</p></a>
+                </div>
+
+                <div class="middle">
+                    <a id="poem17" class="button1" href="poems/poem17.html"><p>Falta de Noção</p></a>
+                    <br>
+                    <br>
+                    <a id="poem20" class="button2" href="poems/poem20.html"><p>Bem me quer</p><p>Mal me quer</p></a>
+                    <br>
+                    <br>
+                    <a id="poem23" class="button1" href="poems/poem23.html"><p>#Rascunho 4</p></a>
+                    <br>
+                    <br>
+                    <a id="poem26" class="button1" href="poems/poem26.html"><p>Últimas palavras</p></a>
+                    <br>
+                    <br>
+                    <a id="poem29" class="button1" href="poems/poem29.html"><p>Toxicidade</p></a>
+                </div>
+
+                <div class="right">
+                    <a id="poem18" class="button1" href="poems/poem18.html"><p>Kseniya</p></a>
+                    <br>
+                    <br>
+                    <a id="poem21" class="button1" href="poems/poem21.html"><p>Caos</p></a>
+                    <br>
+                    <br>
+                    <a id="poem24" class="button2" href="poems/poem24.html"><p>Desconhecidos que Riram</p><p>Solenemente</p></a>
+                    <br>
+                    <br>
+                    <a id="poem27" class="button1" href="poems/poem27.html"><p>#Rascunho 5</p></a>
+                    <br>
+                    <br>
+                    <a id="poem30" class="button1" href="poems/poem30.html"><p>Finalmente</p></a>
+                </div>
+            </div>
+
+            <div class="pages">
+                <a id="underline" href="/content/poems_pages/page1.html">1</a><a>&nbsp;&nbsp;&nbsp;</a>
+                <a id="underline" href="/content/poems_pages/page2.html">2</a><a>&nbsp;&nbsp;&nbsp;</a>
+                <a id="underline" href="/content/poems_pages/page3.html">3</a><a>&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </article>
+    
+        <footer>
+            <small id="foot">&copy; </small>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("site_name").innerHTML += data.site;
+        document.getElementById("foot").innerHTML += data.foot;
+        document.getElementById("intro").innerHTML += nav_menu[0];
+        document.getElementById("poems").innerHTML += nav_menu[1];
+    </script>
+</html>
