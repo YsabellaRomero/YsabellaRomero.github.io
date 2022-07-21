@@ -21,7 +21,6 @@ body {
 
 .intro_text{
     text-align: left;
-    padding: 0 10px 0 15px;
     margin: 0 2px 0 2px;
     padding: 0 20px;
 }
@@ -136,8 +135,9 @@ article .button:focus {
 /*------------------------ MOBILE DEVICES ----------------------------*/
 @media only screen and (min-width: 768px) {
 
-    article{
+    .intro_text{
         line-height: 150%;
+        margin: 0;
     }
 
     .wrap { 
