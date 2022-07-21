@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blogue</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <link href="poems/poem_style_3e.css" rel="stylesheet" type="text/css"/> 
+  <script src="./data.js"></script>
+</head>
+<body>
+    <div class="wrap">
+
+        <article>
+            <div class="center" id="centered_content">
+                <div class="title">
+                    <h1>Dançando sobre Gelo</h1>
+                </div>
+
+                <div class="content">
+                    <div class="slide fade">
+                        <div id="poem">
+                            <p>
+                                Reconfortas-me tanto, minha querida Aurora<br>
+                                Mas o entardecer chama por mim.<br>
+                                E sempre estive de partida<br>
+                                Mesmo com meu coração nas tuas mãos
+                            </p>
+                            <p>
+                                Rodeio-me de cores e venenos<br>
+                                De caos e inspiração,<br>
+                                Talvez a alucionar pretextos<br>
+                                Por isso, convence-me a ficar
+                            </p>
+                            <p>
+                                De tantas fatalidades<br>
+                                A nossa fora a pior<br>
+                                Quando apenas queríamos o espetro de 21 cores,<br>
+                                Todas elas para nós.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="slide fade">
+                        <img id="image" src="/poems/images/poem1.JPG" style="display: none;">
+                    </div>
+
+                    <a class="prev" onclick="slides()">&#10094;</a>
+                    <a class="next" onclick="slides()">&#10095;</a>
+
+                </div>
+
+                <div class="close_button">
+                    <a id="close" href="/content/poems_pages/page1.html">Voltar</a>
+                </div>
+            </div>
+        </article>
+    
+        <footer>
+            <small id="foot">&copy; </small>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("foot").innerHTML += data.foot;
+    </script>
+
+</html>

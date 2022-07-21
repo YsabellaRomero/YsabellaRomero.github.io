@@ -1,0 +1,64 @@
+.wrap { 
+    padding: 25px; 
+    text-align: center; 
+    box-shadow: 0 4px 25px -4px #9da5ab; 
+    background-color: white;
+    color: black;
+}
+
+body {
+    background-color: #D7E6FF;
+}
+
+@media only screen and (min-width: 768px) {
+
+    article { 
+        padding: 40px; 
+    }
+
+    .wrap { 
+        max-width: 750px; 
+        margin: 50px auto;
+        padding: 10px 40px;
+    }
+    
+}
+
+
+/* ----------------------- POEM ----------------------- */
+
+#centered_content {
+    height: 480px;
+    width: 600px;
+    margin: 0px auto 20px auto;
+    background-color: #FFC8C8;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.center{  
+    padding-top: 15px;
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+
+#close{
+    color: black;
+    text-decoration: none;
+    font-size: small;   
+}
+
+/* ---------------------------------------------------- */
+
+/* -------------------- Layout -------------------- */
+
+article .center {
+    display: grid;
+    grid-template-rows: [title] 65px [poem] 388px [close_button];
+    text-align: center;
+  } 
+
+/* ------------------------------------------------ */

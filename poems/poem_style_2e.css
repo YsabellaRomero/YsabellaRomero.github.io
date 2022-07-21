@@ -1,0 +1,189 @@
+.wrap { 
+    padding: 25px;
+    height: 625px; 
+    text-align: center; 
+    box-shadow: 0 4px 25px -4px #9da5ab; 
+    background-color: white;
+    color: black;
+}
+
+body {
+    background-color: #D7E6FF;
+}
+
+article{
+    padding-bottom: 147px;
+}
+
+footer{
+    padding-left: 20px;
+}
+
+/* ----------------------- POEM ----------------------- */
+
+#centered_content {
+    margin: 0px -1em 71px -1em;
+    background-color: #ffd2d2;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.center{  
+    padding-top: 15px;
+    margin: auto;
+    width: auto;
+    text-align: center;
+}
+
+
+#close{
+    color: black;
+    text-decoration: none;
+    font-size: small;   
+}
+
+.poem{
+    top: 50%;
+    margin-top: 50px;
+}
+
+/* ---------------------------------------------------- */
+
+/* -------------------- Layout -------------------- */
+
+article .center {
+    display: grid;
+    grid-template-rows: [title] 75px [poem] 300px [close_button];
+    text-align: center;
+  } 
+
+/* ------------------------------------------------ */
+
+/* --------------- PREV & NEXT BUTTONS --------------- */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: 5px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    bottom: 60%;
+}
+
+.next {
+    left: 385px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev{
+    right: 385px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* --------------------------------------------------- */
+
+
+/* ----------------- FADING EFFECT ----------------- */
+
+#poem {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+#image{
+    margin-top: 10px;
+    height:240px;
+    width: 80%;
+    padding-left: 40px;
+    animation: slide-in 0.2s both;
+    animation-name: fade;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes slide-in {
+    0% {
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+    footer{
+        padding-left: 0px;
+        
+    }
+
+    article { 
+        padding: 40px; 
+    }
+
+    .wrap { 
+        height: 425px;
+        max-width: 750px; 
+        margin: 50px auto;
+        padding: 10px 40px;
+    }
+
+    /* ----------------------- POEM ----------------------- */
+
+    #centered_content {
+        margin: 0px auto 9px auto;
+        height: 312px;
+        width: 600px;
+    }
+
+    /* ---------------- PREV & NEXT BUTTONS ---------------- */
+    .prev, .next {
+        bottom: 60%;
+        width: auto;
+    }
+
+    .next {
+        left: 978px;
+    }
+
+    .prev{
+        right: 978px;
+    }
+
+    /* -------------------- FADING EFFECT -------------------- */
+
+    .prev, .next {
+        font-size: 18px
+    }
+    
+    /* ------------------------ IMAGE ------------------------ */
+
+    #image{
+        margin-top: 14px;
+        height:230px;
+        animation: slide-in 0.2s both;
+        animation-name: fade;
+        width: 395px;
+        padding-left: 0px;
+    }
+
+    /* -------------------- Layout -------------------- */
+
+    article .center {
+        grid-template-rows: [title] 48px [poem] 235px [close_button];
+    } 
+    
+}
