@@ -11,8 +11,7 @@
 
 article { 
     padding: 25px 0;
-    line-height: 150%; 
-    text-align: left; 
+    line-height: 110%;  
 }
 
 body {
@@ -21,6 +20,7 @@ body {
 }
 
 .intro_text{
+    text-align: left;
     padding: 0 10px 0 15px;
     margin: 0 2px 0 2px;
     padding: 0 20px;
@@ -30,9 +30,9 @@ body {
 /* ------------------- BUTTONS FOR POEMS ------------------- */ 
 #show:not(.intro_text){
     display: grid;
-    grid-template-columns: [left] 112px [middle] 112px [right] ;
-    grid-column-gap: 0px;
-    margin-left: -1.2em;
+    grid-template-columns: [left] auto [middle] auto [right] ;
+    grid-column-gap: auto;
+    
 } 
 
 .left {
@@ -68,7 +68,7 @@ body {
     font-family: arial,sans-serif;
     font-size: xx-small;
     height: 30px;
-    width: 100px;
+    width: 97px;
     text-align: center;
 }
 
@@ -135,10 +135,6 @@ article .button:focus {
 
 /*------------------------ MOBILE DEVICES ----------------------------*/
 @media only screen and (min-width: 768px) {
-    article { 
-        padding: 40px; 
-        margin-left: 0px;
-    }
 
     .wrap { 
         height: 530px;
