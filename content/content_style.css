@@ -32,8 +32,7 @@ body {
 /* ------------------- BUTTONS FOR POEMS ------------------- */ 
 #show:not(.intro_text){
     display: grid;
-    grid-template-columns: [left] 140px [middle] 140px [right] ;
-    grid-column-gap: 0px;
+    grid-template-columns: [left] 120px [middle] 120px [right] ;
 } 
 
 .left {
@@ -67,9 +66,9 @@ body {
     white-space: pre;
     display: inline-block;
     font-family: arial,sans-serif;
-    font-size: 11px;
+    font-size: xx-small;
     height: 30px;
-    width: 135px;
+    width: 111px;
     text-align: center;
 }
 
