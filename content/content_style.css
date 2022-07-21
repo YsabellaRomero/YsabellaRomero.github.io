@@ -145,7 +145,7 @@ article .button:focus {
         max-width: 750px; 
         margin: 50px auto;
         padding: 10px 40px;
-        grid-template-rows: [header] 90px [article] 427px [footer];
+        grid-template-rows: [header] 100px [article] 417px [footer];
     }
 
     footer{
