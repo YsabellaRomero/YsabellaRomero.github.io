@@ -41,7 +41,7 @@ body {
 
 article .center {
     display: grid;
-    grid-template-rows: [title] 65px [poem] 388px [close_button];
+    grid-template-rows: [title] 65px [poem] 470px [close_button];
     text-align: center;
   } 
 
@@ -59,16 +59,16 @@ article .center {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    bottom: 50%;
+    bottom: 60%;
 }
 
 .next {
-    left: 978px;
+    left: 325px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev{
-    right: 978px;
+    right: 325px;
 }
 
 .prev:hover, .next:hover {

@@ -54,7 +54,7 @@ footer{
 
 article .center {
     display: grid;
-    grid-template-rows: [title] 40px [poem] 380px [close_button];
+    grid-template-rows: [title] 40px [poem] 440px [close_button];
     text-align: center;
 }
 

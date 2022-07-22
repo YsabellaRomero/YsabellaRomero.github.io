@@ -76,12 +76,12 @@ article .center {
 }
 
 .next {
-    left: 355px;
+    left: 320px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev{
-    right: 355px;
+    right: 320px;
 }
 
 .prev:hover, .next:hover {
