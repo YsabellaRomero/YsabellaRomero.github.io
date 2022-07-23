@@ -54,7 +54,7 @@ footer{
 
 article .center {
     display: grid;
-    grid-template-rows: [title] 40px [poem] 440px [close_button];
+    grid-template-rows: [title] 40px [poem] 386px [close_button];
     text-align: center;
 }
 
@@ -74,16 +74,16 @@ article .center {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    bottom: 60%;
+    bottom: 65%;
 }
 
 .next {
-    left: 355px;
+    left: 325px;
     border-radius: 3px 0 0 3px;
 }
 
 .prev{
-    right: 355px;
+    right: 325px;
 }
 
 .prev:hover, .next:hover {
@@ -120,6 +120,35 @@ article .center {
       transform: translateX(0);
     }
   }
+
+ /* -------------------------------------------------- */
+
+@media only screen and (min-width: 414px) {
+
+    .next {
+        left: 360px;
+    }
+    
+    .prev{
+        right: 362px;
+    }
+
+} 
+
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 414px) {
+
+    .next {
+        left: 360px;
+    }
+    
+    .prev{
+        right: 362px;
+    }
+
+}
 
 /* -------------------------------------------------- */
 
@@ -186,3 +215,5 @@ article .center {
         grid-template-rows: [title] 15px [poem] 357px [close_button];
     } 
 }
+
+/* -------------------------------------------------- */
