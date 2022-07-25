@@ -93,9 +93,8 @@ article .center {
 }
 
 #image{
-    margin-top: 50px;
-    height:270px;
-    width: 100%;
+    margin-top: 70px;
+    height:200px;
     padding-left: 0px;
     animation: slide-in 0.2s both;
     animation-name: fade;
