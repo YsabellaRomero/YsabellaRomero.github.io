@@ -1,10 +1,10 @@
 .wrap { 
     padding: 25px;
-    height: 625px; 
     text-align: center; 
     box-shadow: 0 4px 25px -4px #9da5ab; 
     background-color: white;
     color: black;
+    padding-bottom: 10px;
 }
 
 body {
@@ -12,8 +12,8 @@ body {
 }
 
 article{
-    padding-bottom: 147px;
-}
+    padding-bottom: 210px;
+} 
 
 footer{
     padding-left: 20px;
@@ -50,15 +50,17 @@ footer{
 
 /* ---------------------------------------------------- */
 
+
 /* -------------------- Layout -------------------- */
 
 article .center {
     display: grid;
-    grid-template-rows: [title] 75px [poem] 300px [close_button];
+    grid-template-rows: [title] 60px [poem] 260px [close_button];
     text-align: center;
   } 
 
 /* ------------------------------------------------ */
+
 
 /* --------------- PREV & NEXT BUTTONS --------------- */
 .prev, .next {
@@ -119,6 +121,108 @@ article .center {
     }
   }
 
+/* --------------------------------------------------- */
+
+/* ------------------------------------------------------------- */
+/* ---------------------- MEDIA FOR WIDTH ---------------------- */
+
+/* -------------------------------------------------- */
+
+ @media only screen and (min-width: 360px) {
+    .next {
+        left: 310px;
+    }
+    
+    .prev{
+        right: 315px;
+    }
+
+} 
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 370px) {
+
+    .next {
+        left: 320px;
+    }
+    
+    .prev{
+        right: 320px;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 380px) {
+
+    .next {
+        left: 330px;
+    }
+    
+    .prev{
+        right: 330px;
+    }
+    
+}
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 390px) {
+
+    .next {
+        left: 340px;
+    }
+    
+    .prev{
+        right: 340px;
+    }
+ 
+}
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 400px) {
+
+    .next {
+        left: 350px;
+    }
+    
+    .prev{
+        right: 350px;
+    }
+    
+}
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 410px) {
+
+    .next {
+        left: 360px;
+    }
+    
+    .prev{
+        right: 362px;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 420px) {
+
+    .next {
+        left: 370px;
+    }
+    
+    .prev{
+        right: 370px;
+    }
+    
+}
+
 /* -------------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
@@ -136,7 +240,7 @@ article .center {
         height: 405px;
         max-width: 750px; 
         margin: 50px auto;
-        padding: 10px 40px;
+        padding: 10px 40px 95px 40px;
     }
 
     /* ----------------------- POEM ----------------------- */
@@ -184,3 +288,84 @@ article .center {
     } 
     
 }
+
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* ---------------------- MEDIA FOR HEIGHT ---------------------- */
+
+@media only screen and (min-height: 600px) {
+
+    .prev, .next{
+        bottom: 60%;
+    }
+
+    article{
+        padding-bottom: 50px;
+    } 
+
+} 
+
+@media only screen and (min-height: 650px) {
+
+    .prev, .next{
+        bottom: 62%;
+    }
+
+    article{
+        padding-bottom: 80px;
+    } 
+
+} 
+
+@media only screen and (min-height: 700px) {
+
+    .prev, .next{
+        bottom: 65%;
+    }
+
+    article{
+        padding-bottom: 110px;
+    } 
+} 
+
+@media only screen and (min-height: 750px) {
+
+    .prev, .next{
+        bottom: 67%;
+    }
+
+    article{
+        padding-bottom: 120px;
+    } 
+} 
+
+@media only screen and (min-height: 800px) {
+
+    .prev, .next{
+        bottom: 70%;
+    }
+
+    article{
+        padding-bottom: 130px;
+    } 
+
+} 
+
+@media only screen and (min-height: 850px) {
+
+    .prev, .next{
+        bottom: 72%;
+    }
+
+    article{
+        padding-bottom: 130px;
+    } 
+
+} 
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+

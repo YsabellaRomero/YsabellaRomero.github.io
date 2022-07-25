@@ -4,12 +4,20 @@
     box-shadow: 0 4px 25px -4px #9da5ab; 
     background-color: white;
     color: black;
+    padding-bottom: 10px;
 }
 
 body {
     background-color: #D7E6FF;
 }
 
+article{
+    padding-bottom: 147px;
+}
+
+footer{
+    padding-left: 20px;
+}
 
 /* ----------------------- POEM ----------------------- */
 
@@ -41,7 +49,7 @@ body {
 
 article .center {
     display: grid;
-    grid-template-rows: [title] 65px [poem] 470px [close_button];
+    grid-template-rows: [title] 70px [poem] 410px [close_button];
     text-align: center;
   } 
 
@@ -107,9 +115,122 @@ article .center {
     }
   }
 
+/* ------------------------------------------------------------- */
+/* ---------------------- MEDIA FOR WIDTH ---------------------- */
+
+/* -------------------------------------------------- */
+
+ @media only screen and (min-width: 360px) {
+
+    .next {
+        left: 310px;
+    }
+    
+    .prev{
+        right: 315px;
+    }
+
+    p {
+        font-size:14px;
+    }
+
+} 
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 370px) {
+
+    .next {
+        left: 320px;
+    }
+    
+    .prev{
+        right: 320px;
+    }
+
+}
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 380px) {
+
+    .next {
+        left: 330px;
+    }
+    
+    .prev{
+        right: 330px;
+    }
+
+    p {
+        font-size:13px;
+    }
+} 
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 390px) {
+
+    .next {
+        left: 340px;
+    }
+    
+    .prev{
+        right: 340px;
+    }
+
+} 
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 400px) {
+
+    .next {
+        left: 350px;
+    }
+    
+    .prev{
+        right: 352px;
+    }
+
+} 
+
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 410px) {
+
+    .next {
+        left: 360px;
+    }
+    
+    .prev{
+        right: 362px;
+    }
+
+}
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 420px) {
+
+    .next {
+        left: 370px;
+    }
+    
+    .prev{
+        right: 370px;
+    }
+
+} 
+
 /* -------------------------------------------------- */
 
 @media only screen and (min-width: 768px) {
+    
+    footer{
+        padding-left: 0px;   
+    }
 
     article { 
         padding: 40px; 
@@ -120,5 +241,124 @@ article .center {
         margin: 50px auto;
         padding: 10px 40px;
     }
+
+    p {
+        font-size:initial;
+    }
+
+    /* ----------------------- POEM ----------------------- */
+
+    #centered_content {
+        margin: 0px auto 20px auto;
+        height: 480px;
+        width: 600px;
+    }
+
+    /* ---------------- PREV & NEXT BUTTONS ---------------- */
+    .prev, .next {
+        bottom: 50%;
+        width: auto;
+    }
+
+    .next {
+        left: 978px;
+    }
+
+    .prev{
+        right: 978px;
+    }
+
+    /* -------------------- FADING EFFECT -------------------- */
+
+    .prev, .next {
+        font-size: 18px
+    }
     
+    /* ------------------------ IMAGE ------------------------ */
+
+    #image{
+        margin-top: 47px;
+        height:280px;
+        animation: slide-in 0.2s both;
+        animation-name: fade;
+        width: auto;
+    }
+
+    /* -------------------- Layout -------------------- */
+
+    article .center {
+        grid-template-rows: [title] 60px [poem] 390px [close_button];
+    } 
 }
+
+/* -------------------------------------------------------------- */
+/* ---------------------- MEDIA FOR HEIGHT ---------------------- */
+
+@media only screen and (min-height: 600px) {
+
+    .prev, .next{
+        bottom: 47%;
+    }
+
+    article{
+        padding-bottom: 10px;
+    } 
+}
+
+@media only screen and (min-height: 650px) {
+
+    .prev, .next{
+        bottom: 52%;
+    }
+
+    article{
+        padding-bottom: 30px;
+    } 
+}
+
+@media only screen and (min-height: 700px) {
+
+    .prev, .next{
+        bottom: 56%;
+    }
+
+    article{
+        padding-bottom: 50px;
+    } 
+}
+
+@media only screen and (min-height: 750px) {
+
+    .prev, .next{
+        bottom: 59%;
+    }
+
+    article{
+        padding-bottom: 50px;
+    } 
+}
+
+@media only screen and (min-height: 800px) {
+
+    .prev, .next{
+        bottom: 62%;
+    }
+
+    article{
+        padding-bottom: 80px;
+    } 
+}
+
+@media only screen and (min-height: 850px) {
+
+    .prev, .next{
+        bottom: 64%;
+    }
+
+    article{
+        padding-bottom: 80px;
+    } 
+}
+
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */

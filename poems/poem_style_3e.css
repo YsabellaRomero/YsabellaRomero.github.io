@@ -1,10 +1,10 @@
 .wrap { 
     padding: 25px; 
-    height: 625px;
     text-align: center; 
     box-shadow: 0 4px 25px -4px #9da5ab; 
     background-color: white;
     color: black;
+    padding-bottom: 10px;
 }
 
 body {
@@ -123,7 +123,89 @@ article .center {
 
  /* -------------------------------------------------- */
 
-@media only screen and (min-width: 414px) {
+
+/* ------------------------------------------------------------- */
+/* ---------------------- MEDIA FOR WIDTH ---------------------- */
+
+
+@media only screen and (min-width: 360px) {
+    .next {
+        left: 310px;
+    }
+    
+    .prev{
+        right: 315px;
+    }
+} 
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 370px) {
+
+    .next {
+        left: 320px;
+    }
+    
+    .prev{
+        right: 320px;
+    }
+
+}
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 380px) {
+
+    .next {
+        left: 330px;
+    }
+    
+    .prev{
+        right: 330px;
+    }
+} 
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 390px) {
+
+    .next {
+        left: 340px;
+    }
+    
+    .prev{
+        right: 340px;
+    }
+} 
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 400px) {
+
+    .next {
+        left: 350px;
+    }
+    
+    .prev{
+        right: 352px;
+    }
+
+    p {
+        font-size:initial;
+    }
+
+    article .center {
+        grid-template-rows: [title] 40px [poem] 386px [close_button];
+    }
+} 
+
+/* -------------------------------------------------- */
+
+@media only screen and (min-width: 410px) {
+
+    .prev, .next{
+        bottom: 60%;
+    }
 
     .next {
         left: 360px;
@@ -131,6 +213,19 @@ article .center {
     
     .prev{
         right: 362px;
+    }
+}
+
+ /* -------------------------------------------------- */
+
+ @media only screen and (min-width: 420px) {
+
+    .next {
+        left: 370px;
+    }
+    
+    .prev{
+        right: 372px;
     }
 
 } 
@@ -138,37 +233,24 @@ article .center {
 
 /* -------------------------------------------------- */
 
-@media only screen and (min-width: 414px) {
-
-    .next {
-        left: 360px;
-    }
-    
-    .prev{
-        right: 362px;
-    }
-
-}
-
-/* -------------------------------------------------- */
-
 @media only screen and (min-width: 768px) {
     
     footer{
-        padding-left: 0px;
-        
+        padding-left: 0px;   
     }
 
     article { 
-        padding: 40px; 
-        padding-bottom: 42px;
+        padding: 42px 40px; 
     }
 
     .wrap { 
-        height: 530px;
         max-width: 750px; 
         margin: 50px auto;
         padding: 10px 40px;
+    }
+
+    p {
+        font-size:initial;
     }
 
     /* ----------------------- POEM ----------------------- */
@@ -216,4 +298,78 @@ article .center {
     } 
 }
 
-/* -------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------- */
+/* ---------------------- MEDIA FOR HEIGHT ---------------------- */
+
+@media only screen and (min-height: 600px) {
+
+    .prev, .next{
+        bottom: 50%;
+    }
+
+    article{
+        padding-bottom: 20px;
+    } 
+}
+
+@media only screen and (min-height: 650px) {
+
+    .prev, .next{
+        bottom: 55%;
+    }
+
+    article{
+        padding-bottom: 50px;
+    } 
+}
+
+@media only screen and (min-height: 700px) {
+
+    .prev, .next{
+        bottom: 60%;
+    }
+
+    article{
+        padding-bottom: 50px;
+    } 
+}
+
+@media only screen and (min-height: 750px) {
+
+    .prev, .next{
+        bottom: 60%;
+    }
+
+    article{
+        padding-bottom: 50px;
+    } 
+}
+
+@media only screen and (min-height: 800px) {
+
+    .prev, .next{
+        bottom: 63%;
+    }
+
+    article{
+        padding-bottom: 80px;
+    } 
+}
+
+@media only screen and (min-height: 850px) {
+
+    .prev, .next{
+        bottom: 65%;
+    }
+
+    article{
+        padding-bottom: 100px;
+    } 
+}
+
+/* ------------------------------------------------------------- */
+/* ------------------------------------------------------------- */
