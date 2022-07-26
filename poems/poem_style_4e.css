@@ -93,9 +93,9 @@ article .center {
 }
 
 #image{
-    margin-top: 70px;
-    height:200px;
-    padding-left: 0px;
+    margin: 40px 20px;
+    height:280px;
+    width: 300px;
     animation: slide-in 0.2s both;
     animation-name: fade;
 }
@@ -225,70 +225,6 @@ article .center {
 
 /* -------------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
-    
-    footer{
-        padding-left: 0px;   
-    }
-
-    article { 
-        padding: 40px; 
-    }
-
-    .wrap { 
-        max-width: 750px; 
-        margin: 50px auto;
-        padding: 10px 40px;
-    }
-
-    p {
-        font-size:initial;
-    }
-
-    /* ----------------------- POEM ----------------------- */
-
-    #centered_content {
-        margin: 0px auto 20px auto;
-        height: 480px;
-        width: 600px;
-    }
-
-    /* ---------------- PREV & NEXT BUTTONS ---------------- */
-    .prev, .next {
-        bottom: 50%;
-        width: auto;
-    }
-
-    .next {
-        left: 978px;
-    }
-
-    .prev{
-        right: 978px;
-    }
-
-    /* -------------------- FADING EFFECT -------------------- */
-
-    .prev, .next {
-        font-size: 18px
-    }
-    
-    /* ------------------------ IMAGE ------------------------ */
-
-    #image{
-        margin-top: 47px;
-        height:280px;
-        animation: slide-in 0.2s both;
-        animation-name: fade;
-        width: auto;
-    }
-
-    /* -------------------- Layout -------------------- */
-
-    article .center {
-        grid-template-rows: [title] 60px [poem] 390px [close_button];
-    } 
-}
 
 /* -------------------------------------------------------------- */
 /* ---------------------- MEDIA FOR HEIGHT ---------------------- */
@@ -361,3 +297,77 @@ article .center {
 
 /* ------------------------------------------------------------- */
 /* ------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------- */
+/* ---------------------- DISPLAY OF COMPUTER ---------------------- */
+
+@media only screen and (min-width: 768px) {
+    
+    footer{
+        padding-left: 0px;   
+    }
+
+    article { 
+        padding: 40px; 
+    }
+
+    .wrap { 
+        max-width: 750px; 
+        margin: 50px auto;
+        padding: 10px 40px;
+    }
+
+    p {
+        font-size:initial;
+    }
+
+    /* ----------------------- POEM ----------------------- */
+
+    #centered_content {
+        margin: 0px auto 20px auto;
+        height: 480px;
+        width: 600px;
+    }
+
+    /* ---------------- PREV & NEXT BUTTONS ---------------- */
+    .prev, .next {
+        bottom: 50%;
+        width: auto;
+    }
+
+    .next {
+        left: 978px;
+    }
+
+    .prev{
+        right: 978px;
+    }
+
+    /* -------------------- FADING EFFECT -------------------- */
+
+    .prev, .next {
+        font-size: 18px
+    }
+    
+    /* ------------------------ IMAGE ------------------------ */
+
+    #image{
+        margin: 0px 0px;
+        margin-top: 47px;
+        height:280px;
+        animation: slide-in 0.2s both;
+        animation-name: fade;
+        width: 100%;
+
+    }
+
+    /* -------------------- Layout -------------------- */
+
+    article .center {
+        grid-template-rows: [title] 50px [poem] 400px [close_button];
+    } 
+}
+
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */

@@ -23,7 +23,7 @@ footer{
 
 #centered_content {
     margin: 0px -1em 20px -1em;
-    background-color: #ffd2d2;
+    /*background-color: #ffd2d2;*/
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
@@ -101,10 +101,11 @@ article .center {
 }
 
 #image{
-    margin-top: 70px;
-    height:200px;
+    margin: 50px 10px;
+    height:260px;
     animation: slide-in 0.2s both;
     animation-name: fade;
+    width: 300px;
 }
 
 @keyframes fade {
@@ -233,70 +234,6 @@ article .center {
 
 /* -------------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
-    
-    footer{
-        padding-left: 0px;   
-    }
-
-    article { 
-        padding: 42px 40px; 
-    }
-
-    .wrap { 
-        max-width: 750px; 
-        margin: 50px auto;
-        padding: 10px 40px;
-    }
-
-    p {
-        font-size:initial;
-    }
-
-    /* ----------------------- POEM ----------------------- */
-
-    #centered_content {
-        margin: 0px auto 20px auto;
-        height: 400px;
-        width: 600px;
-    }
-
-    /* ---------------- PREV & NEXT BUTTONS ---------------- */
-    .prev, .next {
-        bottom: 55%;
-        width: auto;
-    }
-
-    .next {
-        left: 978px;
-    }
-
-    .prev{
-        right: 978px;
-    }
-
-    /* -------------------- FADING EFFECT -------------------- */
-
-    .prev, .next {
-        font-size: 18px
-    }
-    
-    /* ------------------------ IMAGE ------------------------ */
-
-    #image{
-        margin-top: 47px;
-        height:280px;
-        animation: slide-in 0.2s both;
-        animation-name: fade;
-        width: auto;
-    }
-
-    /* -------------------- Layout -------------------- */
-
-    article .center {
-        grid-template-rows: [title] 15px [poem] 357px [close_button];
-    } 
-}
 
 /* ------------------------------------------------------------- */
 /* ------------------------------------------------------------- */
@@ -371,5 +308,77 @@ article .center {
     } 
 }
 
+
 /* ------------------------------------------------------------- */
 /* ------------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------- */
+/* ---------------------- DISPLAY OF COMPUTER ---------------------- */
+
+@media only screen and (min-width: 768px) and (min-height: 700px){
+    
+    footer{
+        padding-left: 0px;   
+    }
+
+    article { 
+        padding: 42px 40px; 
+    }
+
+    .wrap { 
+        max-width: 750px; 
+        margin: 50px auto;
+        padding: 10px 40px;
+    }
+
+    p {
+        font-size:initial;
+    }
+
+    /* ----------------------- POEM ----------------------- */
+
+    #centered_content {
+        margin: 0px auto 20px auto;
+        height: 400px;
+        width: 600px;
+    }
+
+    /* ---------------- PREV & NEXT BUTTONS ---------------- */
+    .prev, .next{
+        bottom: 55%;
+    }
+
+    .next {
+        left: 978px;
+    }
+
+    .prev{
+        right: 978px;
+    }
+
+    /* -------------------- FADING EFFECT -------------------- */
+
+    .prev, .next {
+        font-size: 18px
+    }
+    
+    /* ------------------------ IMAGE ------------------------ */
+
+    #image{
+        margin-top: 47px;
+        height:280px;
+        animation: slide-in 0.2s both;
+        animation-name: fade;
+        width: 380px;
+    }
+
+    /* -------------------- Layout -------------------- */
+
+    article .center {
+        grid-template-rows: [title] 15px [poem] 357px [close_button];
+    } 
+}
+
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
