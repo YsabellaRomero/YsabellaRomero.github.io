@@ -19,6 +19,12 @@ footer{
     padding-left: 20px;
 }
 
+p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
 /* ----------------------- POEM ----------------------- */
 
 #centered_content {
@@ -357,7 +363,7 @@ article .center {
     /* ------------------------ IMAGE ------------------------ */
 
     #image{
-        margin-top: 47px;
+        margin-top: 20px;
         height:280px;
         animation: slide-in 0.2s both;
         animation-name: fade;
@@ -367,7 +373,7 @@ article .center {
     /* -------------------- Layout -------------------- */
 
     article .center {
-        grid-template-rows: [title] 15px [poem] 357px [close_button];
+        grid-template-rows: [title] 50px [poem] 322px [close_button];
     } 
 }
 
