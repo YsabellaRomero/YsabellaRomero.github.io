@@ -22,7 +22,6 @@ body {
 .intro_text{
     text-align: left;
     margin: 0 2px 0 2px;
-    /*padding: 0 20px;*/
 }
 
 
@@ -31,6 +30,7 @@ body {
     display: grid;
     grid-template-columns: [left] auto [middle] auto [right] ;
     grid-column-gap: auto;
+    
 } 
 
 .left {
