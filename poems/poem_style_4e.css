@@ -12,7 +12,7 @@ body {
 }
 
 article{
-    padding-bottom: 147px;
+    padding-bottom: 130px;
 }
 
 footer{
@@ -20,10 +20,13 @@ footer{
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+.poem{
+    top: 50%;
+}
 
 /* ----------------------- POEM ----------------------- */
 
@@ -55,7 +58,7 @@ p {
 
 article .center {
     display: grid;
-    grid-template-rows: [title] 70px [poem] 410px [close_button];
+    grid-template-rows: [title] 70px [poem] 480px [close_button];
     text-align: center;
   } 
 
@@ -65,24 +68,15 @@ article .center {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    width: 5px;
-    padding: 16px;
-    color: white;
+    color: black;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    bottom: 60%;
 }
 
 .next {
-    left: 325px;
     border-radius: 3px 0 0 3px;
-}
-
-.prev{
-    right: 325px;
 }
 
 .prev:hover, .next:hover {
@@ -99,9 +93,9 @@ article .center {
 }
 
 #image{
-    margin: 40px 20px;
-    height:280px;
-    width: 300px;
+    padding: 10px 0px 0px 0px;
+    height: 80%;
+    width: 100%;
     animation: slide-in 0.2s both;
     animation-name: fade;
 }
@@ -120,11 +114,17 @@ article .center {
     }
   }
 
+/* --------------------------------------------------- */
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
 /* ------------------------------------------------------------- */
 /* ---------------------- MEDIA FOR WIDTH ---------------------- */
-
 /* -------------------------------------------------- */
-
+/*
  @media only screen and (min-width: 360px) {
 
     .next {
@@ -135,13 +135,7 @@ article .center {
         right: 315px;
     }
 
-    p {
-        font-size:14px;
-    }
-
 } 
-
-/* -------------------------------------------------- */
 
 @media only screen and (min-width: 370px) {
 
@@ -155,7 +149,6 @@ article .center {
 
 }
 
- /* -------------------------------------------------- */
 
  @media only screen and (min-width: 380px) {
 
@@ -172,7 +165,6 @@ article .center {
     }
 } 
 
- /* -------------------------------------------------- */
 
  @media only screen and (min-width: 390px) {
 
@@ -185,8 +177,6 @@ article .center {
     }
 
 } 
-
- /* -------------------------------------------------- */
 
  @media only screen and (min-width: 400px) {
 
@@ -201,8 +191,6 @@ article .center {
 } 
 
 
-/* -------------------------------------------------- */
-
 @media only screen and (min-width: 410px) {
 
     .next {
@@ -214,8 +202,6 @@ article .center {
     }
 
 }
-
- /* -------------------------------------------------- */
 
  @media only screen and (min-width: 420px) {
 
@@ -234,16 +220,12 @@ article .center {
 
 /* -------------------------------------------------------------- */
 /* ---------------------- MEDIA FOR HEIGHT ---------------------- */
-
+/*
 @media only screen and (min-height: 600px) {
 
     .prev, .next{
-        bottom: 47%;
+        bottom: 40%;
     }
-
-    article{
-        padding-bottom: 10px;
-    } 
 }
 
 @media only screen and (min-height: 650px) {
@@ -251,10 +233,6 @@ article .center {
     .prev, .next{
         bottom: 52%;
     }
-
-    article{
-        padding-bottom: 30px;
-    } 
 }
 
 @media only screen and (min-height: 700px) {
@@ -262,10 +240,6 @@ article .center {
     .prev, .next{
         bottom: 56%;
     }
-
-    article{
-        padding-bottom: 50px;
-    } 
 }
 
 @media only screen and (min-height: 750px) {
@@ -273,10 +247,6 @@ article .center {
     .prev, .next{
         bottom: 59%;
     }
-
-    article{
-        padding-bottom: 50px;
-    } 
 }
 
 @media only screen and (min-height: 800px) {
@@ -285,20 +255,27 @@ article .center {
         bottom: 62%;
     }
 
-    article{
-        padding-bottom: 80px;
-    } 
 }
 
 @media only screen and (min-height: 850px) {
 
     .prev, .next{
-        bottom: 64%;
+        bottom: 40%;
     }
+}
 
-    article{
-        padding-bottom: 80px;
-    } 
+@media only screen and (min-height: 900px) {
+
+    .prev, .next{
+        bottom: 33%;
+    }
+}
+
+@media only screen and (min-height: 950px) {
+
+    .prev, .next{
+        bottom: 40%;
+    }
 }
 
 /* ------------------------------------------------------------- */
@@ -336,36 +313,20 @@ article .center {
         width: 600px;
     }
 
-    /* ---------------- PREV & NEXT BUTTONS ---------------- */
-    .prev, .next {
-        bottom: 50%;
-        width: auto;
-    }
-
-    .next {
-        left: 978px;
-    }
-
-    .prev{
-        right: 978px;
-    }
-
     /* -------------------- FADING EFFECT -------------------- */
 
     .prev, .next {
-        font-size: 18px
+        font-size: 18px;
     }
     
     /* ------------------------ IMAGE ------------------------ */
 
     #image{
-        margin: 0px 0px;
-        margin-top: 47px;
-        height:280px;
+        padding-top: 25px;
+        max-height: 360px;
+        max-width: 480px;
         animation: slide-in 0.2s both;
         animation-name: fade;
-        width: 100%;
-
     }
 
     /* -------------------- Layout -------------------- */
