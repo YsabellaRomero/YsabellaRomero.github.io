@@ -313,7 +313,7 @@ article .center {
     /* ------------------------ IMAGE ------------------------ */
 
     #image{
-        padding-top: 5px;
+        padding-top: 15px;
         max-height: 220px;
         max-width: 250px;
         animation: slide-in 0.2s both;
