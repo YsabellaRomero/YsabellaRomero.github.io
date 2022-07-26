@@ -60,7 +60,7 @@ p {
 
 article .center {
     display: grid;
-    grid-template-rows: [title] 60px [poem] 260px [close_button];
+    grid-template-rows: [title] 60px [poem] 350px [close_button];
     text-align: center;
   } 
 
